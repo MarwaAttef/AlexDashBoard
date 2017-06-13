@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.wedad.design">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.GPS_ENABLED_CHANGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".welcomscreens.volloypkg.AppController"
+        android:allowBackup="true"
+        android:icon="@drawable/web_hi_res_512"
+        android:label="Alexandria Navigator"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCHagbcPRalYJz5K08dac_mUd9jM-La1QY" />
+        <activity
+            android:name="com.example.wedad.design.welcomscreens.Splash"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.wedad.design.welcomscreens.MapsMarker"
+            android:label="@string/title_activity_maps_marker"></activity>
+        <activity android:name=".welcomscreens.WelcomeActivity">
+        </activity>
+        <activity
+            android:name=".welcomscreens.introduction.SecondScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".welcomscreens.introduction.ThirdScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".welcomscreens.introduction.FirstScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".welcomscreens.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".welcomscreens.food.FoodActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".welcomscreens.emergencypkg.EmergencyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".welcomscreens.attractionpkg.AttractiveActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".welcomscreens.finance.FinanceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".welcomscreens.healthpkg.HealthActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".welcomscreens.enterteinmentpkg.EntertainmentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".welcomscreens.hotelpkg.HotelActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".welcomscreens.religionpkg.ReligionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".welcomscreens.school.SchoolActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".welcomscreens.DetailActivity"
+            android:screenOrientation="portrait"></activity>
+        <!--<meta-data-->
+        <!--android:name="com.google.android.geo.API_KEY"-->
+        <!--android:value="@string/google_maps_key" />-->
+        <activity
+            android:name=".welcomscreens.PlaceActivity"
+            android:label="@string/title_activity_place">
+            <action android:name="android.intent.action.CALL" />
+            <category android:name="android.intent.category.DEFAULT" />
+            <action android:name="android.intent.action.CALL_PRIVILEGED" />
+            <data android:scheme="tel" />
+        </activity>
+    </application>
+
+</manifest>
+

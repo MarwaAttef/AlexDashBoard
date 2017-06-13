@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:weightSum="10"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    tools:context="com.example.wedad.design.welcomscreens.mainNavigation.HomeFragment"
+    >
+    <!--<LinearLayout android:layout_width="match_parent"-->
+        <!--android:background="#0372ff"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_weight="0.5">-->
+        <!--<fragment-->
+            <!--android:id="@+id/place_autocomplete_fragment"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+
+
+            <!--android:name="com.google.android.gms.location.places.ui.SupportPlaceAutocompleteFragment"-->
+            <!--/>-->
+    <!--</LinearLayout>-->
+
+
+    <!--android:layout_weight="3.55"-->
+    <fragment android:name="com.example.wedad.design.welcomscreens.homepkg.WeatherFragment"
+        android:id="@+id/weather_fragment"
+        android:layout_weight="3.55"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+
+    <fragment  android:name= "com.example.wedad.design.welcomscreens.homepkg.DashBoard"
+        android:id="@+id/dashboard_fragment"
+        android:layout_weight="6.45"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+
+
+
+</LinearLayout>

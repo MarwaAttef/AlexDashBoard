@@ -1,0 +1,78 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/nearme"
+    android:background="#EEEEEE"
+    tools:context="com.example.wedad.design.welcomscreens.mainNavigation.NearMeFragment">
+
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:local="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#0166E6"
+        android:elevation="8dp"
+        android:minHeight="?attr/actionBarSize"
+        android:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.ButtonBarLayout
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/back"
+                android:background="@drawable/arrow" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="170dp"
+                android:fontFamily="roboto_regular"
+                android:gravity="center"
+                android:text="Near me"
+                android:textSize="20dp"
+                android:textColor="#FFFFFF"
+                 />
+        </LinearLayout>
+
+        <android.support.v7.widget.ButtonBarLayout
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/group3156"
+            android:id="@+id/map"
+            >
+
+        </android.support.v7.widget.ButtonBarLayout>
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:id="@+id/linlaHeaderProgress"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ProgressBar
+            android:id="@+id/pbHeaderProgress"
+            android:layout_width="wrap_content"
+            android:indeterminateTint="@color/colorPrimary"
+            android:layout_height="wrap_content" >
+        </ProgressBar>
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="#EEEEEE"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollbars="vertical" />
+
+</FrameLayout>
